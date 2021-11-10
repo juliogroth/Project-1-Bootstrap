@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta author="JG" >
+        <meta name="author" content="JG">
+               
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles/styles.css">
+
+        <title>Talk to Me!</title>
+    </head>
+
+    <body>
+        <header>
+            <input type="checkbox" id="bt_menu">
+            <label for="bt_menu">&#9776;</label>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"><div class="logo"></div></a></li>
+                    <li><a href="index.html">Hello</a></li>
+                    <li><a href="0-beginning.html">The Beginning</a></li>
+                    <li><a href="1-past.html">Past</a>
+                        <ul>
+                            <li><a href="1-past.html#90s">90's</a></li>
+                            <li><a href="1-past.html#00s">00's</a></li>
+                            <li><a href="1-past.html#10s">10's</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="2-todays.html">Todays</a></li>
+                    <li><a href="3-comming.html">To Come</a></li>
+                    <li><a href="4-contact.html">Talk to me</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h1>Now it's your turn...</h1>
+        
+        <section class="container">
+            <div>
+                <p>
+                    If you would like to leave a message for the creator of this structure, please <b>do not</b> use this form.<br>
+                    <br>
+                    <em>I really don't know where it will end up...</em>
+                </p>
+            </div>
+            <div>
+                <form action="http://vip.groupehn.com:20003/html/infospost.php" method="post">
+                    <div>
+                        <label for="Name">Name:</label><br>
+                        <input type="text" id="Name" placeholder="(Name) (Last Name)" />
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" placeholder="example@mail.com"/>
+                    </div>
+                    <div>
+                        <label for="msg">Message:</label><br>
+                        <textarea id="msg" rows="8" cols="50" maxlength="500" placeholder="Text here..."></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" name="Submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </body>
+</html>
