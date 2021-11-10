@@ -2,40 +2,44 @@
 <html lang="en">
 
     <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        
         <meta charset="utf-8">
         <meta author="JG" >
         <meta name="author" content="JG">
                
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="styles/styles.css">
-
+        
         <title>Hello You!</title>
     </head>
 
-    <body>
-        <header>
-            <input type="checkbox" id="bt_menu">
-            <label for="bt_menu">&#9776;</label>
-            
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html"><div class="logo"></div></a></li>
-                    <li><a href="index.html">Hello</a></li>
-                    <li><a href="0-beginning.html">The Beginning</a></li>
-                    <li><a href="1-past.html">Past</a>
-                        <ul>
-                            <li><a href="1-past.html#90s">90's</a></li>
-                            <li><a href="1-past.html#00s">00's</a></li>
-                            <li><a href="1-past.html#10s">10's</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="2-todays.html">Todays</a></li>
-                    <li><a href="3-comming.html">To Come</a></li>
-                    <li><a href="4-contact.html">Talk to me</a></li>
-                </ul>
-            </nav>
-        </header>
-
+    <body class="container-lg">
+    
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="images/logo2.jpg"></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Hello</a>
+                        <a href="0-beginning.html" class="nav-item nav-link">The Beginning</a>
+                        <li class="nav-item dropdown">
+                            <a href="1-past.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Past</a>
+                            <div class="dropdown-menu">
+                                <a href="1-past.html" class="dropdown-item">90's</a>
+                                <a href="1-past.html#00s" class="dropdown-item">00's</a>
+                                <a href="1-past.html#10s" class="dropdown-item">10's</a>
+                            </div>
+                        </li>
+                        <a href="2-todays.html" class="nav-item nav-link">Todays</a>
+                        <a href="4-contact.html" class="nav-item nav-link">Talk to me</a> 
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <h1>Hello you!</h1>
         
@@ -48,7 +52,7 @@
                 </p>
             </div>
             <div>
-                <img src="images/eu.jpg" alt="Me having a nice surprise...">
+                <img src="images/eu.jpg" class="rounded img-fluid w-50" alt="Me having a nice surprise...">
             </div>
         </section>
 
